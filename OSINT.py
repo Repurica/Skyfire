@@ -1,3 +1,19 @@
+# Skyfire
+
+#In OSINT, hold ctrl and click "ProfileScraper" at line 17
+#slide down to replace the function at around line 29 with the following code
+#may need to save as admin user
+'''
+def scrape(self, url='', user=None):
+    output=[]
+    for x in user:
+        self.load_profile_page(url, x)
+        output.append(self.get_profile().to_dict())
+        print("1")
+    return output
+'''
+
+
 from scrape_linkedin import ProfileScraper
 from instagramy import InstagramUser
 import twint
