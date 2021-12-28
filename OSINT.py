@@ -1,6 +1,6 @@
 # Skyfire
 
-#In OSINT, hold ctrl and click "ProfileScraper" at line 17
+#hold ctrl and click "ProfileScraper" at line 17
 #slide down to replace the function at around line 29 with the following code
 #may need to save as admin user
 '''
