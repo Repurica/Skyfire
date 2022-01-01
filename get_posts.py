@@ -2,6 +2,8 @@
 #call the function to get variable
 #!!!modify the time at line5! it should be the folder name!!!
 
+#insta updated to scrape image
+
 time="2021_12_20_20_35_40"
 
 
@@ -38,7 +40,7 @@ def insta_posts():
 
         insta_json=json.loads(insta_json_file.read())
         for number in range(len(insta_json)):
-            if insta_json["{}".format(number)]["post"] != None:
+            if insta_json["{}".format(number)]["image"] != None:
                 insta_posts.append(insta_json["{}".format(number)]["post"])
     insta_json_file.close()
     return insta_posts
