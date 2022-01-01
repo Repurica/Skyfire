@@ -13,6 +13,7 @@ def scrape(self, url='', user=None):
     return output
 '''
 
+#insta updated to scrape post image
 
 from scrape_linkedin import ProfileScraper
 from instagramy import InstagramUser
@@ -65,7 +66,7 @@ def insta(cookie,username,time):
     output={}
     for x in range(len(result)):
         output[x]={}
-        output[x]["post"]=result[x][2]
+        output[x]["image"]=result[x][-3]
         output[x]["location"]=result[x][5]
         output[x]["time"]=result[x][-1].strftime("%Y-%m-%d")
     
